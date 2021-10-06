@@ -69,48 +69,60 @@ a:hover {
     border-radius: 100px;
     width: 200px;
     display: block;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
 
 header {
     margin-top: 50px;
     margin-bottom: 50px;
+    max-width: 1000px;
     padding: 40px;
     background-color: white;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom: 12px solid #55ff9f;
     border-right: 12px solid #55ff9f;
     border-radius: 3px;
+    padding: 10px;
 }
 
-/* card-rows */
+.about-text{
+    text-align: center;
+}
 
-h1, .card-row-title {
+.about-text a {
+    font-weight: 400;
+}
+
+.ital {
+    font-style: italic;
+}
+
+/* projects section */
+
+h1, .container-title {
     text-align: center;
     font-family: 'IBM Plex Mono', Georgia, 'Times New Roman', serif;
     font-weight: 700;
     color: #37028C;
 }
 
-.card-row {
+.projects-container {
     background-color: white;
     border-bottom: 12px solid #55ff9f;
     border-right: 12px solid #55ff9f;
     border-radius: 3px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 20px;
+    padding: 10px;
+    max-width: 1000px;
 }
 
-.card-row-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.card-row-title {
+.container-title {
     font-size: 30px;
     width: fit-content;
     padding-top: 40px;
@@ -119,36 +131,90 @@ h1, .card-row-title {
     border-bottom: 6px solid #55ff9f;
 }
 
-.card {
+.project-card {
+    margin-top: 50px;
+    margin-bottom: 20px;
     width: fit-content;
-    max-width: 450px;
-    height: fit-content;
-    padding: 30px;
     border-radius: 3px;
-    margin: auto;
-    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    padding: 10px;
 }
 
-.card-title {
-    height: 50px;
-    padding-top: 20px;
-    font-family: 'Comfortaa', Georgia, 'Times New Roman', serif;
-    font-size: 20px;
-    color: #37028C;
+.card-content {
+    width: 100%;
+    margin: auto;
     text-align: center;
 }
 
-.card-content img {
-    width: 300px;
-    display: block;
-    margin: auto;
-    border-radius: 3px;
-    box-shadow: 6px 6px 4px #caffe1;
+.card-title, .project-card-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Comfortaa', Georgia, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #37028C;
 }
+
+.project-card-title {
+    text-align: left;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.project-link {
+    font-family: 'Comfortaa', Georgia, 'Times New Roman', serif;
+    font-size: 14px;
+    height: 20px;
+}
+
+.project-link img {
+    width: 15px;
+    vertical-align: text-bottom;
+}
+
+.project-link a {
+    display: inline;
+}
+
+.card-image {
+    width: fit-content;
+    display: inline-block;
+    border-radius: 3px;
+    vertical-align: top;
+}
+
+.card-image img {
+    vertical-align: bottom;
+}
+
+.card-text {
+    padding: 10px;
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.project-languages-group {
+    margin-top: 5px;
+}
+
+.project-language {
+    display: inline;
+    margin: 5px;
+    border: 1px solid green;
+    background-color: #55ff9f;
+    padding: 5px;
+}
+
+
 
 /* contact card */
 
-.contact-card {
+.small-card {
     background-color: white;
     padding: 25px;
     border-radius: 3px;
@@ -156,6 +222,8 @@ h1, .card-row-title {
     height: fit-content;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-field {
