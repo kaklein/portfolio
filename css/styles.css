@@ -20,7 +20,7 @@ h2, button {
 }
 
 p, .form-field {
-    font-family: 'Zilla Slab', Georgia, 'Times New Roman', serif;
+    font-family: 'Comfortaa', Georgia, 'Times New Roman', serif;
     font-size: 18px;
     font-weight: 400;
 }
@@ -188,6 +188,7 @@ h1, .container-title {
 
 .card-image img {
     vertical-align: bottom;
+    width: 400px;
 }
 
 .card-text {
