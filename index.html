@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Comfortaa:wght@700&family=IBM+Plex+Mono:wght@700&family=Zilla+Slab:wght@400;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- Link to stylesheet -->
     <link href="css/styles.css" type="text/css" rel="stylesheet">
@@ -18,6 +18,7 @@
 
     <div id="navbar">
         <a class="navbar-link" id="title" href=#top>katie klein</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="navbar-link" href=#about>about</a>&nbsp;&nbsp;|&nbsp;&nbsp;
         <a class="navbar-link" href=#projects>projects</a>&nbsp;&nbsp;|&nbsp;&nbsp;
         <a class="navbar-link" href=#contact>get in touch</a>&nbsp;&nbsp;|&nbsp;&nbsp;
         <a class="navbar-link" href=#resume>resume</a>
@@ -28,15 +29,32 @@
         <a name="top"> </a>
     </div>
 
-    <header>
+    <header class="header-container">
         <img src="images/portrait-smiling.jpg" alt="Katie portrait" id="portrait">
-        <h1>katie klein</h1>
-        <p class="about-text">I'm a self-motivated software development student with a passion for logic, learning, creativity, and making things work.</p>
-        <p class="about-text ital">Graduating in March 2022 from <a href="https://bellevue.edu/" target="_blank">Bellevue University.</a></p>
+        <div class="header-text">
+            <h1>katie klein</h1>
+            <h3>software developer & web designer</h3>
+        </div>
     </header>
 
+    <!-- About section -->
+    <div class="section-container">
+        <div class="anchor">
+            <a name="about"> </a>
+        </div>
+        <div class="card-content">
+            <h2 class="container-title">About</h2>
+            <p class="about-text">Hi, I'm <span class="special-text">Katie</span>.
+            I'm a software development student with a passion for <span class="special-text">logic</span>, <span class="special-text">creativity</span>, and <span class="special-text">making things work</span>.</p>
+            <p class="about-text">My interest in coding began with a love of video games and a desire to <span class="special-text">create</span>. With numerous projects now under my belt - both coursework
+                and personal endeavors - I'm excited to continue <span class="special-text">learning</span> and <span class="special-text">discovering</span> in the world of software and web development.
+            </p>
+        </div>
+    </div>
+
+
     <!-- Projects section -->
-    <div class="projects-container">
+    <div class="section-container">
         <div class="anchor">
             <a name="projects"> </a>
         </div>
@@ -107,14 +125,23 @@
     </div>
 
     <!-- Contact section -->
-    <div class="card small-card">
+    <div class="section-container">
         <div class="anchor">
             <a name="contact"> </a>
         </div>
-        <div class="card-title">Get in touch</div>
-        <div class="card-content">
+        <div class="card-content small-card">
+            <div class="container-title">Get in touch</div>
+            <div class="social-links">
+                <h3 class="center">Find me on:</h3>
+                <div class="social-link">
+                    <a href="https://github.com/kaklein" target="_blank"><img src="images/github-logo-white.png"><p>GitHub</p></a>
+                </div>
+                <div class="social-link">
+                    <a href="https://www.linkedin.com/in/katieklein07/" target="_blank"><img src="images/linkedin-logo.png"><p>LinkedIn</p></a>
+                </div>
+            </div>
             <form action="https://formspree.io/f/xdoyyvql" method="post">
-                
+                <h3 class="center">Drop me a line:</h3>
                 <div class="form-field">
                     <label for="first-name">First name:</label>
                     <input type="text" id="first-name" name="first-name" class="input">
@@ -132,7 +159,7 @@
 
                 <div class="form-field">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" class="input" rows="5" cols="40"></textarea>
+                    <textarea id="message" name="message" class="input" rows="8" cols="100"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary full-width">Send Message</button>
@@ -142,23 +169,21 @@
     </div>
 
     <!-- Resume download link -->
-    <div class="card">
+    <div class="section-container">
         <div class="anchor">
             <a name="resume"> </a>
         </div>
-        <button type="button">
-            <a href="resources/KleinResume.pdf" download target="_blank">Download Resume</a>
-        </button>
-    </div>
-
-    <!-- Back to top icon -->
-    <div class="back-to-top">
-        <a href=#top><img src="images/back-to-top-icon.png"></a>
+        <div class="card-content small-card">
+            <div class="container-title">Resume</div>
+            <button type="button" class="download-button">
+                <a href="resources/KleinResume.pdf" download target="_blank">Download Resume PDF</a>
+            </button>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <div id="social-links">
+        <div class="social-links">
             <a href="https://github.com/kaklein" target="_blank"><img src="images/github-logo-white.png"></a>
             <a href="https://www.linkedin.com/in/katieklein07/" target="_blank"><img src="images/linkedin-logo.png"></a>
         </div>
