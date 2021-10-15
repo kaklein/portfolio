@@ -91,8 +91,10 @@ a:hover {
 }
 
 .section-container, .header-container {
+    /*
     margin-top: 100px;
     margin-bottom: 100px;
+    */
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -101,11 +103,12 @@ a:hover {
 
 .section-container {
     border-top: 1px solid #55ff9f;
-    margin-top: 100px;
 }
 
 .header-container {
     width: fit-content;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .about-text{
@@ -140,13 +143,12 @@ a:hover {
     padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
     border-bottom: 6px solid #55ff9f;
 }
 
 .project-card {
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: fit-content;
     border-radius: 3px;
     margin-left: auto;
@@ -155,10 +157,19 @@ a:hover {
     padding: 10px;
 }
 
+.project-card-content {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .card-content {
     width: 100%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .card-title, .project-card-title {
@@ -261,12 +272,22 @@ form {
     height: 30px;
     width: 400px;
     float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    padding: 5px;
 }
 
 .form-field textarea {
     float: right;
     width: 400px;
     margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    padding: 5px;
+}
+
+#contact-form-status {
+    color: #55ff9f;
 }
 
 button {
@@ -348,6 +369,7 @@ footer {
 
 .center {
     text-align: center;
+    color: #55ff9f;
 }
 
 #copyright p {

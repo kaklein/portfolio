@@ -58,9 +58,10 @@
         <div class="anchor">
             <a name="projects"> </a>
         </div>
-        <h2 class="container-title">Projects</h2>          
+        <div class="card-content">
+            <h2 class="container-title">Projects</h2>          
             <div class="project-card">
-                <div class="card-content">
+                <div class="project-card-content">
                     <div class="card-image">
                         <img src="images/runlog_screenshot.png" alt="Runlog screenshot">
                     </div>
@@ -93,7 +94,7 @@
             </div>
 
             <div class="project-card">
-                <div class="card-content">
+                <div class="project-card-content">
                     <div class="card-image">
                         <img src="images/fan_database_screenshot.png" alt="Fan Database screenshot">
                     </div>
@@ -122,6 +123,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 
     <!-- Contact section -->
@@ -140,7 +142,7 @@
                     <a href="https://www.linkedin.com/in/katieklein07/" target="_blank"><img src="images/linkedin-logo.png"><p>LinkedIn</p></a>
                 </div>
             </div>
-            <form action="https://formspree.io/f/xdoyyvql" method="post">
+            <form id="contact-form" action="https://formspree.io/f/xdoyyvql" method="post">
                 <h3 class="center">Drop me a line:</h3>
                 <div class="form-field">
                     <label for="first-name">First name:</label>
@@ -163,6 +165,7 @@
                 </div>
 
                 <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                <p id="contact-form-status"></p>
 
             </form>
         </div>
@@ -193,5 +196,29 @@
             </p>
         </div>
     </footer>
+
+    <!-- Script to handle contact form submission -->
+    <script>
+        var form = document.getElementById("contact-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("contact-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            status.innerHTML = "Message sent successfully. Thanks for reaching out!";
+            form.reset()
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
 </body>
 </html>
