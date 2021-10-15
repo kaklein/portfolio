@@ -255,12 +255,10 @@ form {
 .form-field {
     margin: 20px;
     display: block;
-    height: 35px;
     text-align: right;
 }
 
 .form-field label {
-    height: 35px;
     width: 100%;
     line-height: 35px;
     color: white;
