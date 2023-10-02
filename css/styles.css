@@ -1,26 +1,26 @@
 /* general styling */
 
 html {
-    background-color: #37028C;
+    background-color: #FFF4EC;
 }
 
 h1 {
     font-size: 3em;
-    color: #55ff9f;
+    color: #414288;
     font-family: 'IBM Plex Mono', Georgia, 'Times New Roman', serif;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 h2, h4, p {
-    color: #0E091A;
+    color: #FFF4EC;
 }
 
 h3 {
     font-family: 'Comfortaa', Georgia, 'Times New Roman', serif;
     font-size: 1.3em;
     text-align: left;
-    color: white;
+    color: #FFF4EC;
 }
 
 button {
@@ -38,45 +38,45 @@ p, .form-field {
 
 a {
     text-decoration: none;
-    color: #0E091A;
+    color: #FFF4EC;
     font-weight: 700;
 }
 
 a:hover {
-    color:#37028C;
+    color:#FFF4EC;
 }
 
 /* navbar */
 #navbar {
-    color: white;
+    color: #FFF4EC;
     padding: 20px;
     height: fit-content;
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #37028C;
+    background-color: #FFF4EC;
 }
 
 .navbar-link {
     display: inline;
     font-family: 'Comfortaa', Georgia, 'Times New Roman', serif;
-    color: white;
+    color: #FFF4EC;
     font-size: 1.1em;
 }
 
 .navbar-link:hover {
-    color: #55ff9f;
+    color: #414288;
     cursor: pointer;
 }
 
 #navbar #title {
-    color:#55ff9f;
+    color:#414288;
 }
 
 /* header */
 
 #portrait {
-    border: 1px solid #37028C;
+    border: 1px solid #FFF4EC;
     border-radius: 100px;
     width: 200px;
 
@@ -102,7 +102,7 @@ a:hover {
 }
 
 .section-container {
-    border-top: 1px solid #55ff9f;
+    border-top: 1px solid #414288;
 }
 
 .header-container {
@@ -117,7 +117,7 @@ a:hover {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: white;
+    color: #FFF4EC;
     max-width: 600px;
 }
 
@@ -127,7 +127,7 @@ a:hover {
 
 .special-text {
     font-weight: 700;
-    color: #55ff9f;
+    color: #414288;
 }
 
 /* projects section */
@@ -136,14 +136,14 @@ a:hover {
     text-align: center;
     font-family: 'IBM Plex Mono', Georgia, 'Times New Roman', serif;
     font-weight: 700;
-    color: white;
+    color: #FFF4EC;
     font-size: 2em;
     width: fit-content;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 6px solid #55ff9f;
+    border-bottom: 6px solid #414288;
 }
 
 .project-card {
@@ -153,7 +153,7 @@ a:hover {
     border-radius: 3px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
+    background-color: #FFF4EC;
     padding: 10px;
 }
 
@@ -177,7 +177,7 @@ a:hover {
     padding-bottom: 10px;
     font-family: 'Comfortaa', Georgia, 'Times New Roman', serif;
     font-size: 1.2em;
-    color: #37028C;
+    color: #FFF4EC;
 }
 
 .project-card-title {
@@ -231,7 +231,7 @@ a:hover {
     display: inline;
     margin: 5px;
     border: 1px solid green;
-    background-color: #55ff9f;
+    background-color: #414288;
     padding: 5px;
 }
 
@@ -261,7 +261,7 @@ form {
 .form-field label {
     width: 100%;
     line-height: 35px;
-    color: white;
+    color: #FFF4EC;
     margin-right: 10px;
     text-align: right;
 }
@@ -285,11 +285,11 @@ form {
 }
 
 #contact-form-status {
-    color: #55ff9f;
+    color: #414288;
 }
 
 button {
-    background-color: #55ff9f;
+    background-color: #414288;
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
@@ -300,8 +300,8 @@ button {
 }
 
 button:hover {
-    background-color: #caffe1;
-    border-color: #55ff9f;
+    background-color: #7A7BC9;
+    border-color: #414288;
 }
 
 .download-button {
@@ -353,7 +353,7 @@ footer {
 }
 
 .social-link p:hover {
-    color: #55ff9f;
+    color: #414288;
 }
 
 .social-link img, .social-link p {
@@ -362,17 +362,17 @@ footer {
 }
 
 .social-link p, .social-links p {
-    color: white;
+    color: #FFF4EC;
 }
 
 .center {
     text-align: center;
-    color: #55ff9f;
+    color: #414288;
 }
 
 #copyright p {
     font-family: 'Comfortaa', Georgia, 'Times New Roman', serif;
-    color: white;
+    color: #FFF4EC;
     text-align: center;
     font-size: 1em;
 }
