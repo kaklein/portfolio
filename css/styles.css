@@ -55,6 +55,7 @@ a:hover {
     width: 100%;
     position: fixed;
     top: 0;
+    left: 0;
     background-color: #F0DCCD;
 }
 
@@ -103,7 +104,7 @@ a:hover {
 }
 
 .section-container {
-    border-top: 1px solid #414288;
+    border-top: 3px solid #F0DCCD;
 }
 
 .header-container {
@@ -331,6 +332,11 @@ button:hover {
 /* footer */
 footer {
     margin-top: 150px;
+    background-color: #F0DCCD;
+    padding: 5px;
+    width: 100%;
+    position: absolute;
+    left: 0%;
 }
 
 
