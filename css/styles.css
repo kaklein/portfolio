@@ -27,6 +27,7 @@ button {
     font-family: 'Noto Sans', Helvetica, sans-serif;
     font-size: 1em;
     text-align: center;
+    color: #FFF4EC;
 }
 
 p, .form-field {
@@ -54,7 +55,7 @@ a:hover {
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #414288;
+    background-color: #FFF4EC;
 }
 
 .navbar-link {
@@ -117,7 +118,7 @@ a:hover {
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #414288;
+    color: #000F14;
     max-width: 600px;
 }
 
@@ -136,7 +137,7 @@ a:hover {
     text-align: center;
     font-family: 'Urbanist', Helvetica, sans-serif;
     font-weight: 700;
-    color: #000F14;
+    color: #414288;
     font-size: 2em;
     width: fit-content;
     padding-top: 10px;
