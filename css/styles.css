@@ -55,7 +55,7 @@ a:hover {
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #FFF4EC;
+    background-color: #F0DCCD;
 }
 
 .navbar-link {
@@ -72,12 +72,6 @@ a:hover {
 
 #navbar #title {
     color:#414288;
-}
-
-#title {
-    border: 1px solid #414288;
-    border-radius: 5px;
-    padding: 10px;
 }
 
 /* header */
