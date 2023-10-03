@@ -23,6 +23,11 @@ h3 {
     color: #000F14;
 }
 
+.sub-heading {
+    font-family: 'Urbanist', Helvetica, sans-serif;
+    font-size: 2em;
+}
+
 button {
     font-family: 'Noto Sans', Helvetica, sans-serif;
     font-size: 1em;
