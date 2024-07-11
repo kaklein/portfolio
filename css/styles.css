@@ -62,6 +62,7 @@ a:hover {
     top: 0;
     left: 0;
     background-color: #F0DCCD;
+    z-index: 5;
 }
 
 .navbar-link {
@@ -156,12 +157,14 @@ a:hover {
 .project-card {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: fit-content;
-    border-radius: 3px;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #414288;
-    padding: 10px;
+    padding: 25px;
+    background-color: #faece1;
+    contain: layout;
 }
 
 .project-card-content {
@@ -189,6 +192,7 @@ a:hover {
 
 .project-card-title {
     text-align: left;
+    font-weight: bold;
 }
 
 .card-title {
@@ -217,9 +221,23 @@ a:hover {
     vertical-align: top;
 }
 
-.card-image img {
+.card-image-sml, .card-image-med {
+    float: left;
     vertical-align: bottom;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.card-image-med img {
     width: 400px;
+}
+
+.card-image-sml img {
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
 }
 
 .card-text {
@@ -231,15 +249,17 @@ a:hover {
 }
 
 .project-languages-group {
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .project-language {
-    display: inline;
+    display: inline-block;
     margin: 5px;
-    border: 1px solid green;
-    background-color: #414288;
-    padding: 5px;
+    background-color: #F0DCCD;
+    border-radius: 5px;
+    padding: 10px;
+    color: #000F14;
 }
 
 
@@ -306,6 +326,10 @@ button {
     margin: auto;
 }
 
+button a {
+    color: #FFF4EC;
+}
+
 button:hover {
     background-color: #9A9BD6;
     border-color: #414288;
@@ -313,6 +337,10 @@ button:hover {
 
 .download-button {
     margin: 15px;
+}
+
+button img {
+    width: 20px;
 }
 
 /* back-to-top */
